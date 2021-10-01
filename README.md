@@ -3,7 +3,7 @@ Benchmark Kubernetes persistent disk volumes with `fio`: Read/write IOPS, bandwi
 
 # Usage
 
-1. Download [dbench.yaml](https://raw.githubusercontent.com/logdna/dbench/master/dbench.yaml) and edit the `storageClassName` to match your Kubernetes provider's Storage Class `kubectl get storageclasses`
+1. Download [dbench.yaml](https://raw.githubusercontent.com/kubernetes-projects/dbench/master/dbench.yaml) and edit the `storageClassName` to match your Kubernetes provider's Storage Class `kubectl get storageclasses`
 2. Deploy Dbench using: `kubectl apply -f dbench.yaml`
 3. Once deployed, the Dbench Job will:
     * provision a Persistent Volume of `1000Gi` (default) using `storageClassName: ssd` (default)
@@ -33,6 +33,7 @@ Mixed Random Read/Write IOPS: 43.1k/14.4k
 
 * Lee Liu (LogDNA)
 * [Alexis Turpin](https://github.com/alexis-turpin)
+* [Pratik raj](https://github.com/rajpratik71)
 
 ## License
 
