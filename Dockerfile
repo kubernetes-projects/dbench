@@ -1,7 +1,3 @@
-LABEL org.opencontainers.image.authors="rajpratik71@gmail.com"
-LABEL version="3.28"
-LABEL description="dbench - dockerized fio tests"
-
 FROM alpine:latest
 
 RUN apk --no-cache add make alpine-sdk zlib-dev libaio-dev linux-headers coreutils libaio && \
